@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  min-width: 70%;
+  max-width: 90%;
+  max-height: 300px;
+
+  padding: 20px 10px;
+  background-color: #ddd;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.main::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.main::-webkit-scrollbar-track {
+  background: gray;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: red;
+}
+.main input {
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.main > button {
+  width: 19%;
+  padding: 10px;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+.main input,
+.main > button {
+  height: 40%;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+}
+.task {
+  width: 99%;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.task > button {
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  background-color: red;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
