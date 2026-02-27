@@ -1,0 +1,24 @@
+name: Deploy Static Site to Ubuntu
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Ubuntu Server via SSH
+        uses: burnett01/rsync-deployments@v6.0.0
+        with:
+          switches: -avzr --delete
+          path: ./
+          remote_path: /var/www/frontend
+          remote_host: ${{ secrets.SERVER_IP }}
+          remote_user: ${{ secrets.SERVER_USER }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
