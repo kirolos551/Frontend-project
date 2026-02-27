@@ -81,5 +81,6 @@ This project highlights :
 - Real-world deployment workflow
 ----
 ## 👨‍💻 Author
-
-Kirolos (DevOps Engineer)
+CI/CD  pipeline, deployment automation, and server configuration implemented by:
+kirolos  
+DevOps Engineer
